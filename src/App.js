@@ -7,27 +7,23 @@ function App() {
   const [starData, setStarData] = useState([]);
 
   // Function to get star wars data api
-  const getStarWars = async (searchItems) => {
-    console.log(getStarWars);
-    // Make fetch request and store the response
-    try {
-      const response = await fetch(
-        `https://swapi.dev/api/starships/${searchItems}`
-      );
+  useEffect(() => {
+    const getStarWarsData = async () => {
+      console.log("fetching data");
+      const response = await fetch("https://swapi.dev/api/starships/");
       const data = await response.json();
-      setStarData(data);
       console.log(data);
-    } catch (error) {
-      console.error(error);
-    }
-    getStarWars();
-  };
+      // set the data to the state movies variable
+      setStarData(data);
+    };
+    getStarWarsData();
+  }, []);
 
   return (
     <div className="App">
       {" "}
       <h1>Fetching Star Wars From an API </h1>
-      <StarShipCard star-search={getStarWars} />
+      <StarShipCard />
     </div>
   );
 }
