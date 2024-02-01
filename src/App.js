@@ -18,7 +18,12 @@ function App() {
       console.error(e);
     }
   };
-  return <div className="App">This is the main App</div>;
+  return (
+    <div className="App">
+      {" "}
+      <h1>Fetching Star Wars From an API </h1>
+    </div>
+  );
 }
 
 export default App;
