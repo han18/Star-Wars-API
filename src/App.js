@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import StarShipCard from "./Components/StarShipCard";
 
 function App() {
   // State to hold star wars data
@@ -14,14 +15,15 @@ function App() {
       );
       const data = await response.json();
       setStarData(data);
-    } catch (e) {
-      console.error(e);
+    } catch (error) {
+      console.error(error);
     }
   };
   return (
     <div className="App">
       {" "}
       <h1>Fetching Star Wars From an API </h1>
+      <StarShipCard starsearch={getStarWars} />
     </div>
   );
 }
