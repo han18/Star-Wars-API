@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       {" "}
       <h1>Fetching Star Wars From an API </h1>
-      <StarShipCard />
+      <StarShipCard star={starData} />
     </div>
   );
 }
