@@ -1,26 +1,36 @@
 .container {
-  max-width: 300px;
-
-  /* Center the container in middle on horizontal axis */
-  margin: 0 auto;
-
-  /* Add empty space above the container (20% of the view height) */
-  margin-top: 20vh;
-  color: violet;
-  border: 10px solid blue;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  /* justify-content: center; */
+  align-content: space-between;
+  justify-content: space-around;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  border-radius: 10px;
 }
 
 /* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
+.container div {
+  width: 150px;
+  height: 100px;
 }
 
-.App {
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(184, 194, 164);
+}
+
+h1 {
+  color: rgb(227, 238, 160);
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -57,4 +67,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

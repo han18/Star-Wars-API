@@ -5,10 +5,12 @@ import "../App.css";
 function StarShipCard(props) {
   const starships = props.starship;
   return (
-    <div className="card">
+    <div className="container">
       {" "}
       {starships.map((starship, index) => (
-        <h3 key={index}>{starship.name}</h3>
+        <div key={index} className="items">
+          {starship.name}
+        </div>
       ))}
     </div>
   );
