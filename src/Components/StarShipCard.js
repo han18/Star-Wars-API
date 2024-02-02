@@ -1,10 +1,11 @@
 // this is where the cards will be displayed
-import Card from "react-bootstrap/Card";
+
+import "../App.css";
 
 function StarShipCard(props) {
   const starships = props.starship;
   return (
-    <div>
+    <div className="card">
       {" "}
       {starships.map((starship, index) => (
         <h3 key={index}>{starship.name}</h3>
@@ -14,15 +15,3 @@ function StarShipCard(props) {
 }
 
 export default StarShipCard;
-{
-  /* <Card style={{ width: "18rem" }}>
-        <Card.Body>
-          <Card.Title></Card.Title>
-
-          <Card.Subtitle className="mb-2 text-muted">
-            Card Subtitle
-          </Card.Subtitle>
-          <Card.Text></Card.Text>
-        </Card.Body>
-      </Card> */
-}

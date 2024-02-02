@@ -1,3 +1,25 @@
+.container {
+  max-width: 300px;
+
+  /* Center the container in middle on horizontal axis */
+  margin: 0 auto;
+
+  /* Add empty space above the container (20% of the view height) */
+  margin-top: 20vh;
+  color: violet;
+  border: 10px solid blue;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
 .App {
   text-align: center;
 }
