@@ -1,14 +1,11 @@
 // this is where the cards will be displayed
 
 function StarShipCard({ star }) {
+  const { name, modle } = star;
   return (
     <div>
       <h1>Display the star wars</h1>
-      <div>
-        {star.map((star) => {
-          <h4>{star.name}</h4>;
-        })}
-      </div>
+      <div>Name: {star.name}</div>
     </div>
   );
 }
