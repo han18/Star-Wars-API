@@ -1,4 +1,5 @@
 // this is where the cards will be displayed
+import Card from "react-bootstrap/Card";
 
 function StarShipCard(props) {
   const starships = props.starship;
