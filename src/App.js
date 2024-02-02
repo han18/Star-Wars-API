@@ -1,3 +1,4 @@
+import "./App.css";
 import React, { useState, useEffect } from "react";
 import StarShipCard from "./Components/StarShipCard";
 
@@ -37,7 +38,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className="App">
       <h1>Starship API</h1>
       <StarShipCard starship={starships} />
     </div>

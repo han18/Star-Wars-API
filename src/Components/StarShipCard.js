@@ -5,13 +5,24 @@ function StarShipCard(props) {
   const starships = props.starship;
   return (
     <div>
-      {starships.map((starship) => (
-        <h3 key={starship.name}>
-          {starship.name} {starship.model}
-        </h3>
+      {" "}
+      {starships.map((starship, index) => (
+        <h3 key={index}>{starship.name}</h3>
       ))}
     </div>
   );
 }
 
 export default StarShipCard;
+{
+  /* <Card style={{ width: "18rem" }}>
+        <Card.Body>
+          <Card.Title></Card.Title>
+
+          <Card.Subtitle className="mb-2 text-muted">
+            Card Subtitle
+          </Card.Subtitle>
+          <Card.Text></Card.Text>
+        </Card.Body>
+      </Card> */
+}
