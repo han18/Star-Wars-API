@@ -10,6 +10,7 @@ function StarShipCard(props) {
       {starships.map((starship, index) => (
         <div key={index} className="items">
           {starship.name}
+          <div></div>
         </div>
       ))}
     </div>

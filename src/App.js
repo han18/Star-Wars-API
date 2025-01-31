@@ -19,6 +19,7 @@ const App = () => {
         const data = await response.json();
         setStarships(data.results);
         setLoading(false);
+        console.log(data);
       } catch (error) {
         setError(error);
         setLoading(false);
